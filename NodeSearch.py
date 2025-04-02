@@ -33,10 +33,6 @@ class SearchListWidget(_QtWidgets.QDialog):
         self.mainLayout = _QtWidgets.QVBoxLayout()
         self.mainLayout.setContentsMargins(0,0,0,0)
 
-        # # The main layout for UI
-        # self.mainLayout = _QtWidgets.QVBoxLayout()
-        # self.mainLayout.setContentsMargins(0,0,0,0)
-
         # Find nodes with the Search term
         self._searchList = _QtWidgets.QListWidget()
         self._searchList.itemActivated.connect(self._item_click)
